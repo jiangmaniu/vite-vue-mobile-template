@@ -1,5 +1,6 @@
 module.exports = {
   plugins: {
+    'postcss-preset-env': {},
     'postcss-pxtorem': {
       rootValue: 37.5,
       // 转换成的rem后，保留小数点后几位

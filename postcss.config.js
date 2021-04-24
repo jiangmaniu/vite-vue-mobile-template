@@ -1,5 +1,6 @@
 module.exports = {
   plugins: {
+    'postcss-write-svg': {},
     'postcss-preset-env': {},
     'postcss-pxtorem': {
       rootValue: 37.5,

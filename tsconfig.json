@@ -7,8 +7,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
-    "noUnusedLocals": true,                         // 报错未使用的变量
-    "noUnusedParameters": true,                     // 报错未使用的参数
+    "noUnusedLocals": true, // 报错未使用的变量
+    "noUnusedParameters": true, // 报错未使用的参数
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -16,6 +16,7 @@
     "lib": ["esnext", "dom"],
     "types": ["vite/client"],
     "paths": {
+      "/@/": ["src/*"],
       "/$/*": ["build/*"]
     }
   },
@@ -29,9 +30,5 @@
     "build/**/*.d.ts",
     "build/**/*.ts"
   ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "*.js"
-  ]
+  "exclude": ["node_modules", "dist", "*.js"]
 }

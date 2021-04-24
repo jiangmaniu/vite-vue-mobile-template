@@ -1,0 +1,27 @@
+// 最大宽度限制
+@max_width: 600px;
+// 超出最大宽度的字体大小
+@max_fontSize: 60px;
+
+// 最小宽度限制
+@min_width: 300px;
+// 超出最大宽度的字体大小
+@min_fontSize: 30px;
+
+html {
+  @media screen and (max-width: @min_width) {
+    font-size: @min_fontSize !important;
+  }
+
+  @media screen and (min-width: @max_width) {
+    font-size: @max_fontSize !important;
+  }
+}
+
+// body 也增加最大最小宽度限制，避免默认100%宽度的 block 元素跟随 body 而过大过小
+body {
+  max-width: @max_width;
+  min-width: @min_width;
+  margin: 0 auto;
+  font-size: 16px !important;
+}

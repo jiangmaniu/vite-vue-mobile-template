@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "serve": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview",
+    "preview": "npm run build && vite preview",
+    "preview:dist": "vite preview",
     "reinstall": "rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules && yarn",
     "clear:cache": "rimraf node_modules/.cache && rimraf node_modules/.vite",
     "clear:lib": "rimraf node_modules",
